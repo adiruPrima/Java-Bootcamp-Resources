@@ -1,5 +1,11 @@
 public class YourInitials {
     public static void main(String[] args) {
-         // Instructions for this workbook are on Learn the Part (See the Udemy Video: Your Initials to access the link).
+         System.out.println("M           M      PPPPPPPP");
+         System.out.println("MM         MM      P       P");
+         System.out.println("M M       M M      P       P");
+         System.out.println("M  M     M  M      PPPPPPPP");
+         System.out.println("M   M   M   M      P");
+         System.out.println("M    M M    M      P");
+         System.out.println("M     M     M      P");
     }
 }
