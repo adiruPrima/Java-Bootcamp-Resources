@@ -12,8 +12,10 @@ public class SignIn {
         System.out.println("\nWelcome to Javagram! Sign in below\n");
         System.out.print("- Username: ");
         //pick up username
+        String myUsername = scan.nextLine();
         System.out.print("- Password: ");
         //pick up password
+        String myPassword = scan.nextLine();
 
         // see Learn the Part for the remaining instructions.
         
@@ -28,6 +30,16 @@ public class SignIn {
 
         
         */
+        while (!password.equals(myPassword) || !username.equals(myUsername)) {
+            System.out.println("\nIncorrect, please try again!\n");
+            System.out.print("- Username: ");
+            myUsername = scan.nextLine();
+            System.out.print("- Password: ");
+            myPassword = scan.nextLine();
+        }
+
+        System.out.println("\nWelcome back, " + username + "!");
+
         scan.close();
         
     }
