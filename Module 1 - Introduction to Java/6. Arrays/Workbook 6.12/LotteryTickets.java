@@ -7,12 +7,20 @@ public class LotteryTickets {
         int[] ticket = {34, 43, 45, 65, 21, 54};
         int[] ticket2;
 
-        System.out.print("Ticket 1 numbers: ");
-        //Task 3 - Call printTicketNumbers for int[] ticket.   
+        ticket2 = Arrays.copyOf(ticket, ticket.length);
+        ticket2[2] = 54;
 
-        System.out.print("Ticket 2 numbers: ");
-        //Task 3 - Call printTicketNumbers for int[] ticket2.   
+        printTicketNumbers(ticket, 1);  
+        printTicketNumbers(ticket2, 2);  
     } 
+
+    public static void printTicketNumbers(int[] numbers, int name) {
+        System.out.print("Ticket " + name + " numbers: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println("\n");
+    }
     
 }
 
